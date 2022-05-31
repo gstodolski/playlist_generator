@@ -25,11 +25,7 @@ playlist_id = all_playlists["items"][0]["id"]
 track_list = []
 for track in tracks['items']:
     track_list.append(track['uri'])
-    # spotify.user_playlist_add_tracks(username, playlist_id, track['uri'])
 
 spotify.user_playlist_add_tracks(user=username, playlist_id=playlist_id, tracks=track_list)
 
-# for track in results['items']:
-#     print('track: ' + track['name'])
-    # print('audio    : ' + track['preview_url'])
-    # print('cover art: ' + track['album']['images'][0]['url'])
+print(f"Playlist \"{playlist_name}\" created!")
