@@ -13,7 +13,7 @@ spotify = spotipy.Spotify(auth_manager = token)
 # Create playlist
 playlist_name = date.today().strftime("%b %y").lower()
 playlist_description = "monthly playlist for " + date.today().strftime("%B %Y").lower() + " automatically generated using the spotify web api"
-spotify.user_playlist_create(username, playlist_name, public = True, description = playlist_description)
+spotify.user_playlist_create(username, playlist_name, public = True, collaborative=False, description = playlist_description)
 
 # Populate playlist
 limit = 10
