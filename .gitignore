@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Cache file
+.cache-nnvgcp374kky42o1kg663l6se
