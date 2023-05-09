@@ -3,6 +3,9 @@ from spotipy.oauth2 import SpotifyOAuth
 import json
 import os
 from datetime import date
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Set up
 scope = "playlist-modify-public user-top-read"
